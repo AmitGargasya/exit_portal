@@ -38,7 +38,7 @@ Seperation Cell
 """.format(emp_name=emp_name, exit_submitted_date=exit_submitted_date, last_date=last_date)
         msg.attach(MIMEText(body, 'plain'))
         s = smtplib.SMTP_SSL('mx5.alerts.valuelabs.com', 465)
-        s.login(from_sender, "new$$2019")
+        s.login(from_sender, "******")
         text = msg.as_string()
         toaddr = []
         toaddr.append(emp_mail_id)
